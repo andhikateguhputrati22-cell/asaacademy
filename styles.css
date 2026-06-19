@@ -4,6 +4,7 @@
   --text: #f8fafc;
   --muted: #94a3b8;
   --shadow: rgba(15, 23, 42, 0.55);
+  --white-shadow: rgba(255, 255, 255, 0.08);
 }
 
 * {
@@ -120,7 +121,7 @@ body {
   padding: 12px;
   margin-top: 6px;
   border: 1px solid rgba(255,255,255,0.04);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.45);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.45), 0 0 40px var(--white-shadow);
 }
 
 .coach-section h2 {
@@ -218,6 +219,7 @@ body {
   border-radius: 24px;
   padding: 18px;
   border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.32), 0 0 32px var(--white-shadow);
   scroll-snap-align: start;
 }
 
@@ -301,7 +303,7 @@ body {
   padding: 18px;
   width: min(420px, calc(100% - 40px));
   z-index: 61;
-  box-shadow: 0 30px 60px rgba(2,8,23,0.6);
+  box-shadow: 0 30px 60px rgba(2,8,23,0.6), 0 0 30px var(--white-shadow);
   border: 1px solid rgba(148,163,184,0.06);
 }
 .modal-close {
@@ -454,6 +456,7 @@ button {
   display: grid;
   gap: 6px;
   font-size: 0.95rem;
+  box-shadow: 0 12px 24px rgba(255,255,255,0.06);
 }
 
 .booking-summary li strong {
